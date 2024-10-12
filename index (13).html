@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte Técnico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <form action="/submit" method="POST">
+        <H1>Suporte Técnico</H1>
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+    <br>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required placeholder="Digite seu nome">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu email">
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+
+            
+            <label for="Phone">Telefone:</label>
+            <input type="Telephone" id="Phone" name="Telefone" minlength="11" maxlength="11" required placeholder="Telefone:">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Informações Técnicas</legend>
+            <label for="service">Qual é o modelo do dispositivo?:</label>
+            <select id="service" name="Qual é o modelo do dispositivo?">
+              <option value="Computador">Computador</option>
+              <option value="Smartphone">Smartphone</option>
+              <option value="Notebook">Notebook</option>
+              <option value="Tablet">Tablet</option>
+            </select>
+            </label>
+          
+              </label>
+              <br><br>
+              <label for="service">Atendimento:</label>
+              <select id="service" name="Atendimento">
+                <option value="Presencial">Presencial</option>
+                <option value="Online">Online</option>
+              </select>
+          </fieldset> 
+         
+    <br>    
+        <button type="submit">Enviar</button>
+
+   </main>
